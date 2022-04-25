@@ -15,13 +15,13 @@ The tag of emoji is besed on human intuition accroding to the original paper, in
 
 
 ## step2-Data cleaning          
-For English tweets, we follow the following steps:
-    1. remove url
-    2. remove user names
-    3. remove punctuations
-    4. remove stopwords
-    5. lower the words
-    6. lemmatization
+For English tweets, we follow the following steps:      
+1. remove url
+2. remove user names
+3. remove punctuations
+4. remove stopwords
+5. lower the words
+6. lemmatization
     
 And, we generate 3 new coloumns which:
                 
@@ -30,8 +30,8 @@ And, we generate 3 new coloumns which:
         - 2) all emojis
         - 3) only concerned emojis
 
------------
-For Chinese tweets, we follow the following steps:
+
+For Chinese tweets, we follow the following steps:      
 1. remove url
 2. remove user names
 3. cut the words
@@ -46,7 +46,7 @@ And, we generate 3 new coloumns which:
         - 2) all emojis
         - 3) only concerned emojis
          
-## step3-EDA
+### step3.1-EDA
 1. plot the most requent emoji          
                 
 For English tweets:             
@@ -57,7 +57,7 @@ For Chinese tweets:
 <img width="669" alt="image" src="https://user-images.githubusercontent.com/99280254/165021062-f4f3c924-731d-4113-a788-0989f8c782cb.png">
 
 
-## step3-Basic model
+### step3.2-Basic model
 2. topic moedel with emoji using in english tweets --- first galance of emoji meaning
 3. word embedding with only emoji
 4. word embedding with both emoji and words
