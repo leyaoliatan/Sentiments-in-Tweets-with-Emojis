@@ -14,7 +14,40 @@ The tag of emoji is besed on human intuition accroding to the original paper, in
 <img width="369" alt="image" src="https://user-images.githubusercontent.com/99280254/165020171-62551399-f2a6-40e3-93bc-35b9e65b06b9.png">
 
 
-## step2-Data cleaning          
+## step2-Data cleaning   
+### 2.1-First EDA
+### 2.2-Data cleaning
+        
+For English tweets, we follow the following steps:      
+
+    1. remove url
+    2. remove user names
+    3. remove punctuations
+    4. remove stopwords
+    5. lower the words
+    6. lemmatization
+    7. keep only english characters and emojis
+        
+For Chinese tweets, we:     
+        
+    1. remove url
+    2. remove user names
+    3. cut the words
+    4. remove stopwords (en & zh)
+    5. transform to simplified Chinese
+    6. remove punctuations (en & zh)
+    7. remove sensitive Chinese words
+    8. remove non-chinese words
+
+### 2.3-Extract pure emojis and text   
+And, we generate 3 new coloumns which:
+- remove all emojis      
+----
+- include all emojis
+        
+----
+- only include concerned emojis
+
 For English tweets, we follow the following steps:      
 1. remove url
 2. remove user names
