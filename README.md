@@ -38,7 +38,8 @@ For Chinese tweets, we follow the following steps:
 4. remove stopwords (en & zh)
 5. transform to simplified Chinese
 6. remove punctuations (en & zh)
-7. remove english words
+7. remove sensitive Chinese words
+8. remove english words
 
 And, we generate 3 new coloumns which:
                 
