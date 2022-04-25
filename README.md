@@ -80,20 +80,26 @@ And, we generate 3 new coloumns which:
         - 2) all emojis
         - 3) only concerned emojis
          
-### step3.1-EDA
-1. plot the most requent emoji          
+## step3-EDA & Basic models
+### 3.1 data exploring
+1. plot the most requent emoji        
                 
 For English tweets:             
-<img width="637" alt="image" src="https://user-images.githubusercontent.com/99280254/165021160-4a3396c3-363e-44f6-8ebb-e52bf0005c2b.png">
+<img width="897" alt="image" src="https://user-images.githubusercontent.com/99280254/165055909-b5c26e0b-7eb2-49f7-bdb4-8a4713d25fb3.png">
+
 
         
 For Chinese tweets:             
-<img width="669" alt="image" src="https://user-images.githubusercontent.com/99280254/165021062-f4f3c924-731d-4113-a788-0989f8c782cb.png">
+<img width="1024" alt="image" src="https://user-images.githubusercontent.com/99280254/165055982-756baa0f-4417-4a32-bb73-324363d1c230.png">
 
 
-### step3.2-Basic model
-2. topic moedel with emoji using in english tweets --- first galance of emoji meaning
-3. word embedding with only emoji
-4. word embedding with both emoji and words
+
+### 3.2 topic models
+1. topic moedel with all emoji --- first galance of emoji meaning
+2. topic model with only concerned emojis
+
+### 3.3 word embedding
+1. word embedding with only emoji
+2. word embedding with both emoji and words
 
 
