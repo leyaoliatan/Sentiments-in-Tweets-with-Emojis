@@ -1,9 +1,9 @@
 
-# Emoji Sentiment Analysis with Tweets
+# Sense Exploring of Emojis with Word2Vec Model and Using Emojis to Modify Short-text Sentiments Classification
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTigQWzoYCNiDyrz1BN4WTf2X2k9OZ_yvW-FsmcIMsdS9fppNmh)
 
 ## step1-Data collection
-    - period: 2022-0415-2022-0425
+    - period: 2022-0415-2022-0528
     - filter: retweet or media
     - querry: tweeets that contain at least one concerned emoji
  
@@ -80,26 +80,19 @@ And, we generate 3 new coloumns which:
         - 2) all emojis
         - 3) only concerned emojis
          
-## step3-EDA & Basic models
+## step3-EDA & Word embedding
 ### 3.1 data exploring
-1. plot the most requent emoji        
+1. plot the most frequent emojis        
                 
-For English tweets:             
-<img width="897" alt="image" src="https://user-images.githubusercontent.com/99280254/165055909-b5c26e0b-7eb2-49f7-bdb4-8a4713d25fb3.png">
+<img width="864" alt="image" src="https://user-images.githubusercontent.com/99280254/171414950-28c5fdd0-3533-4380-a6ca-2be1c429bfe0.png">
 
-
-        
-For Chinese tweets:             
-<img width="1024" alt="image" src="https://user-images.githubusercontent.com/99280254/165055982-756baa0f-4417-4a32-bb73-324363d1c230.png">
-
-
-
-### 3.2 topic models
-1. topic moedel with all emoji --- first galance of emoji meaning
-2. topic model with only concerned emojis
-
-### 3.3 word embedding
-1. word embedding with only emoji
+### 3.2 word embedding
+1. Word2Vec word embedding with only emoji
 2. word embedding with both emoji and words
 
 
+## step4-Sentiment Classification
+### 4.1 Method 1: only text
+### 4.2 Method 2: text + emojis' description names
+### 4.3 Method 3: text + emojis' most similar text tokens
+### 4.4 method 4: text + pre-trained word embedding model
